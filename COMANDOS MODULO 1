@@ -1,0 +1,46 @@
+Comandos usados practica 2
+====================================================
+
+nmcli con mod [interfaz] ipv4.method auto (DHCP)
+
+nmcli con mod [interfaz] ipv4.addresses 192.168.1.100/24 ipv4.gateway 192.168.1.1 ipv4.method manual (Estática)
+
+nmcli con mod [interfaz] ipv4.dns "8.8.8.8 8.8.4.4"
+
+nmcli con up [interfaz] (Reiniciar red)
+
+nmtui (Interfaz visual)
+
+Comandos usados practica 3
+====================================================
+
+sudo useradd [tu_nombre]
+
+sudo passwd [tu_nombre]
+
+sudo usermod -aG wheel [tu_nombre]
+
+sudo groupadd guest
+
+sudo useradd -g guest invitado
+
+sudo userdel -r invitado
+
+sudo groupdel guest
+
+Comandos usados practica 4
+====================================================
+
+mkdir materia
+
+vi materia/estudiante.txt (Comandos internos: i para insertar, Esc + :wq para guardar)
+
+chmod 700 materia/estudiante.txt (Control total propietario)
+
+chmod 070 materia/estudiante.txt (Control total grupo)
+
+mkdir materia2
+
+cp materia/estudiante.txt materia2/
+
+rm -rf materia
